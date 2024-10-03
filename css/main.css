@@ -1,0 +1,613 @@
+@font-face {
+    font-display: swap; 
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/livvic-v14-latin-regular.woff2') format('woff2'); 
+  }
+  
+@font-face {
+    font-display: swap; 
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/livvic-v14-latin-600.woff2') format('woff2');
+  }
+  
+@font-face {
+    font-display: swap; 
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/livvic-v14-latin-700.woff2') format('woff2'); 
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+body{
+    background-color: rgba(1, 78, 86, 1);
+    font-family: "livvik",sans-serif;
+}
+ 
+
+/* Header styles start */
+.site-header {
+    padding: 73px 0 129px;
+}
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.nav-item{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+.site-item a {
+    color: white;
+    font-family: "Livvic",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    transition:all 0.4s linear ;
+}
+.site-item a:hover{
+    color: #F67E7E;
+}
+.nav-btn{
+    width: 153px;
+    font-family: 'Livvic',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 9px 0 11px;
+    transition:all 0.4s linear ;
+}
+.nav-btn:hover{
+    background:white;
+    color: rgba(1, 78, 86, 1);
+}
+/* Header styles end */
+
+/* Hero section styles start */
+.hero-section{
+    background-image: url("../images/hero-bg1.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: calc(50% - 740PX)  top;
+}
+.hero-section-item{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-title{
+    width: 605px;
+    height: 200px;
+}
+.hero-title h2{
+    font-family: 'Livvic',sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    text-align: left;
+    color: #FFF;
+}
+.hero-title h2 span{
+    color: #F67E7E;
+}
+.hero-section-text{
+    width: 445px;
+    background-image: url("../images/hero-bg2.png");
+    background-repeat: no-repeat;
+    background-size: 358px 100px;
+    background-position: right bottom;
+    padding-bottom: 250px;
+}
+.hero-section-text span{
+    margin-bottom: 79px;
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background: rgba(121, 200, 199, 1);
+}
+.hero-section-text p{
+    font-family: "Livvic",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #FFFF;
+}   
+
+/* Hero section styles end */
+
+
+/* Build section styles start */
+.build-section {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background: rgba(1, 47, 52, 1);
+    background-image: url("../images/build-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100px 200px;
+    background-position: right bottom;
+}
+.build-section-items {
+    display: flex;
+    justify-content: space-between;
+}
+.build-item1 {
+    width: 445px;
+}
+.build-item1 h2{
+    font-family: 'Livvic',sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    color: white;
+}
+.build-item1 span{
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background-color: #F67E7E;
+    margin-bottom: 54px;
+}
+.build-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+.build-list-item {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+.build-list-item div h3{
+    font-family: 'Livvic',sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    color: #F67E7E;
+    margin-bottom: 16px;
+}
+.build-list-item div p{
+    color: white;
+    font-family: 'Livvic',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    
+}
+.build-list-item div{
+    width: 445px;
+
+}
+/* Build section styles end */
+
+
+/* Delivering section start */
+.deliveing-section {
+    background-color: #014E56;
+    background-image: url("../images/delivering-bg3.png"), url("../images/delivering-bg2.png");
+    background-repeat: no-repeat;
+    background-size:  174px 100px, 200px 100px; 
+    height: 745px;
+    background-position: left top, right bottom;
+}
+.deliveing-section h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    color: white;
+}
+.delivering-title{
+    margin: 0 auto;
+    width: 932px;
+    padding-top: 140px ;
+    padding-bottom: 30px;
+}
+.deliveing-section h2 span{
+    color: #79C8C7;
+}
+.delivering-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.delivering-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    gap: 24px;
+}
+.delivering-list-item p{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+}
+.delivering-list-item h3{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    color: #79C8C7;    
+}
+.delivering-list-item img{
+    width: 62px;
+    height: 62px;
+}
+.delivering-list-item strong{
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+}
+.qoshtirnoq {
+    margin-bottom: -50px;
+}
+/* Delivering section endi */
+
+
+/* Ready section style start */
+.ready-section {
+    background-image: url("../images/ready-bg.png");
+    background-color: #F67E7E;
+    background-repeat: no-repeat;
+    background-size: 200px 122px;
+    height: 200px;
+    background-position: left bottom;
+}
+.ready-section-items {
+    height: 200px   ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ready-section-items h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    color: #014E56;    
+    font-family: 'livvic',sans-serif;
+}
+
+/* Ready section style stop */
+
+
+/* Footer styles start */
+.site-footer {
+    background:#002529 ;
+    height: 100%;
+    color: white;
+    padding: 48px 0     ;
+}
+.footer-item {
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-list {
+    display: flex;
+    gap: 70px;
+}
+.footer-div1 ul {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+.footer-div1 ul li a {
+   transition: all 0.4s linear;
+   font-size: 15px;
+   line-height: 25px;
+   text-align: center;
+   color: white;
+   font-weight: 600;
+}
+.footer-div1 ul li a:hover{
+    color: #F67E7E;
+}
+
+.footer-item2 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    font-family: 'livvic',sans-serif;
+}
+.footer-list1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 192px;
+}
+.facebook{
+    color: white;
+    transition: all 0.4s linear;
+}
+.facebook:hover{
+    color: #F67E7E;
+}
+.pinterest{
+    color: white;
+    transition: all 0.4s linear;
+}
+.pinterest:hover{
+    color: #F67E7E;
+}.twitter{
+    color: white;
+    transition: all 0.4s linear;
+}
+.twitter:hover{
+    color: #F67E7E;
+}
+/* Footer styles end */
+
+
+
+
+
+
+/* ABOUT PAGE STYLES START */
+.hero-section-about{
+    background-image: url("../images/about-hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100px 200px;
+    background-position: right bottom;
+    padding-bottom: 120px;
+}
+.hero-about-item{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.hero-about-item h2{
+    font-family: 'Livvic',sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100px;
+    text-align: left;
+    color: white;
+}
+.about-text{
+    width: 730px;
+}
+.about-text span{
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    background: #F67E7E;
+    margin-bottom: 40px;
+}
+.about-text p{
+    font-family: 'Livvic',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: white;
+}
+.meet-section{
+    background-color: #004047;
+    background-image: url("../images/contact-bg1.png"), url("../images/delivering-bg3.png");
+    padding: 140px 0 140px;
+    background-repeat: no-repeat;
+    background-size: 100px 200px, 147px 100px;
+    background-position: left top, right bottom;
+}
+.meet-section h2{
+    font-family: "Livvic",sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    color: white;
+    margin-bottom: 64px;
+}
+.meet-list{
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 72px;
+}
+.meet-list li{
+    transition: all 0.4s linear;
+    padding: 32px 48px;
+    width: 350px;
+    height: 253px;
+    background-color: #012F34 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.meet-list li div a{
+    color: white;
+    transition: all 0.3s linear;
+}
+.meet-list li div a:hover{
+    color: #F67E7E;
+}
+.meet-list li:hover{
+    background: #002529;
+}
+.meet-list p{
+    text-align: center;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 28px;
+}
+.meet-list li button{
+    width: 56px;
+    height: 56px;
+    color: #002529;
+    font-size: 30px;
+    background: #F67E7E;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: -60px;
+    transition: all 0.4s linear;
+}
+.meet-list li button:hover{
+    rotate: 45deg;
+    background-color: #79C8C7;
+}
+.clients-section{
+    padding: 140px 0 140px;
+    background-color: #012F34;
+    background-image: url("../images/clients-bg.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: calc(50% - 870px) top;
+}
+.clients-section h2{
+    margin-bottom: 64px;
+    font-family: 'Livvic',sans-serif;
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+
+}
+/* ABOUT PAGE STYLES END */
+
+
+
+
+
+
+/* CONTACT PAGE STYLES START */
+.hero-section-contact {
+    padding-bottom: 128px ; 
+    background-repeat: no-repeat;
+    background-size: 100px 200px , 100px 200px;
+    background-image: url("../images/contact-bg.png"), url('../images/contact-bg1.png');
+    background-position:right bottom ,left top ;  
+}
+.site-conact-main-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+}
+.contact-form input{
+    padding: 10px;
+    width: 540px;
+    height: 42px;
+    background: none;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none ;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.486);
+}
+.message{
+    padding: 10px;
+    width: 540px;
+    height: 83px;
+    background: none;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none ;
+    border-bottom: solid   rgba(255, 255, 255, 0.486);
+
+}
+::placeholder{
+    color:  rgba(255, 255, 255, 0.486);
+}
+.contact-form input:focus{
+    border-color: green;
+}
+.message:focus{
+    border-color: green;
+}
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16.5px;
+}
+.contact-list li{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    color: white;
+    font-family: "livvik",sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    /* line-height: 28px; */
+}
+.contact-list h3{
+    color: #F67E7E;
+    font-weight: 700;
+    font-size: 32px;
+    /* line-height: 48px/ */
+}
+.contact-list h2{
+    color: #F67E7E;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 0px;
+    color: white;
+    line-height: 60px;
+}
+.contact-form button{
+    width: 123px;
+    height: 48px;
+    color: #014E56;
+    background: white;
+    transition: all 0.4s linear;   
+    border: 2px transparent;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: -420px;
+}
+.contact-form button:hover{
+    background: #014E56;
+    color: white;
+    border: 2px solid white;
+    
+}
+/* CONTACT PAGE STYLES END */
