@@ -1,0 +1,66 @@
+.meet-section{
+    background-color: #004047;
+    background-image: url("../images/contact-bg1.png"), url("../images/delivering-bg3.png");
+    padding: 140px 0 140px;
+    background-repeat: no-repeat;
+    background-size: 100px 200px, 147px 100px;
+    background-position: left top, right bottom;
+}
+.meet-section h2{
+    font-family: "Livvic",sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    color: white;
+    margin-bottom: 64px;
+}
+.meet-list{
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 72px;
+}
+.meet-list li{
+    transition: all 0.4s linear;
+    padding: 32px 48px;
+    width: 350px;
+    height: 253px;
+    background-color: #012F34 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.meet-list li div a{
+    color: white;
+    transition: all 0.3s linear;
+}
+.meet-list li div a:hover{
+    color: #F67E7E;
+}
+.meet-list li:hover{
+    background: #002529;
+}
+.meet-list p{
+    text-align: center;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 28px;
+}
+.meet-list li button{
+    width: 56px;
+    height: 56px;
+    color: #002529;
+    font-size: 30px;
+    background: #F67E7E;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: -60px;
+    transition: all 0.4s linear;
+}
+.meet-list li button:hover{
+    rotate: 45deg;
+    background-color: #79C8C7;
+}

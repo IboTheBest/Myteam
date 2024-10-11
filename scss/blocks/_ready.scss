@@ -1,0 +1,22 @@
+.ready-section {
+    background-image: url("../images/ready-bg.png");
+    background-color: #F67E7E;
+    background-repeat: no-repeat;
+    background-size: 200px 122px;
+    height: 200px;
+    background-position: left bottom;
+}
+.ready-section-items {
+    height: 200px   ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ready-section-items h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    color: #014E56;    
+    font-family: 'livvic',sans-serif;
+}
