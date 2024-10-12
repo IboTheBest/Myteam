@@ -29,7 +29,7 @@
     color: #F67E7E;
 }
 .nav-btn{
-    width: 153px;
+    min-width: 153px;
     font-family: 'Livvic',sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -44,4 +44,36 @@
 .nav-btn:hover{
     background:white;
     color: rgba(1, 78, 86, 1);
+}
+.menu{
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+@media (max-width:763px){
+
+    .nav-item{
+        gap: 48px;
+    }
+    .nav-item a img{
+        width: 127px;
+        height: 32px;
+    }
+    .site-header {
+        padding: 64px 0 112px;
+    }
+}
+@media (max-width:600px){
+    .site-header {
+        padding: 48px 0 80px;
+    }
+    .nav-list{
+        display: none;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
 }
