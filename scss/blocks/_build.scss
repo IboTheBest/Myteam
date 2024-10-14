@@ -10,9 +10,10 @@
 .build-section-items {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 .build-item1 {
-    width: 445px;
+    max-width: 445px;
 }
 .build-item1 h2{
     font-family: 'Livvic',sans-serif;
@@ -60,6 +61,42 @@
     
 }
 .build-list-item div{
-    width: 445px;
+    max-width: 445px;
 
+}
+@media (max-width:1027px){
+    .build-section{
+        padding: 100px 98px; 
+    }
+    .build-list{
+        align-items: start;
+    }
+    .build-section-items{
+        flex-direction: column;
+        gap: 64px;
+
+        
+    }
+
+}
+@media (max-width:605px){
+    .build-section{
+        padding: 64px 0;
+        background-position: right top;
+    }
+    .build-item1{
+        max-width: 100%;
+        & > h2{
+            text-align: left;
+        }
+    }
+    
+   
+    .build-list-item{
+        flex-direction: column;
+        align-items: center;
+        & > div > h3,p {
+            text-align: center;
+        }
+    }   
 }

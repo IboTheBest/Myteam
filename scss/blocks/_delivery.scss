@@ -3,8 +3,8 @@
     background-image: url("../images/delivering-bg3.png"), url("../images/delivering-bg2.png");
     background-repeat: no-repeat;
     background-size:  174px 100px, 200px 100px; 
-    height: 745px;
     background-position: left top, right bottom;
+    padding: 140px 0;
 }
 .deliveing-section h2{
     font-size: 48px;
@@ -15,9 +15,9 @@
 }
 .delivering-title{
     margin: 0 auto;
-    width: 932px;
-    padding-top: 140px ;
-    padding-bottom: 30px;
+    max-width: 932px;
+    // margin-top: 140px ;
+    margin-bottom: 30px;
 }
 .deliveing-section h2 span{
     color: #79C8C7;
@@ -33,7 +33,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 350px;
+    max-width: 350px;
     gap: 24px;
 }
 .delivering-list-item p{
@@ -64,4 +64,24 @@
 }
 .qoshtirnoq {
     margin-bottom: -50px;
+}
+@media (max-width:850px){
+    .deliveing-section{
+        padding: 100px 0;
+    }
+    *{
+        text-align: center;
+    }
+    .delivering-list{
+        flex-direction: column;
+    }
+    .delivering-list-item{
+        width: 100%;
+    }
+    .deliveing-section h2{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        
+    }
 }

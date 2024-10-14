@@ -25,9 +25,6 @@
     text-align: left;
     transition:all 0.4s linear ;
 }
-.site-item a:hover{
-    color: #F67E7E;
-}
 .nav-btn{
     min-width: 153px;
     font-family: 'Livvic',sans-serif;
@@ -40,10 +37,14 @@
     border-radius: 30px;
     padding: 9px 0 11px;
     transition:all 0.4s linear ;
+    display: block;
 }
 .nav-btn:hover{
     background:white;
     color: rgba(1, 78, 86, 1);
+}
+.site-item a:hover{
+    color: #F67E7E;
 }
 .menu{
     display: none;

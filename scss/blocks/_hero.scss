@@ -24,7 +24,7 @@
     color: #F67E7E;
 }
 .hero-section-text{
-    width: 445px;
+    width: 100%;
     background-image: url("../images/hero-bg2.png");
     background-repeat: no-repeat;
     background-size: 358px 100px;
@@ -61,6 +61,9 @@
         text-align: center;
 
     }
+    .hero-section-text{
+        background-position: center;
+    }
     .hero-section-text span{
         display: none;
     }
@@ -78,7 +81,12 @@
     }
     .hero-section-text p{
         text-align: center;
+        
 
+    }
+    .hero-section-text{
+        width: 100%;
+        background-position: center;
     }
     .hero-section-text span{
         display: none;
