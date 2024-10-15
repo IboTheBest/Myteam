@@ -43,11 +43,16 @@
 .meet-list li:hover{
     background: #002529;
 }
-.meet-list p{
+.meet-list li small,p{
     text-align: center;
     color: white;
     margin-top: 8px;
     margin-bottom: 28px;
+}
+.meet-list li strong{
+    text-align: center;
+    color: #79C8C7;
+    margin-top: 8px;
 }
 .meet-list li button{
     width: 56px;

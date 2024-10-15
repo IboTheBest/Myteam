@@ -83,9 +83,6 @@ body {
   padding: 9px 0 11px;
   transition: all 0.4s linear;
   display: block;
-}
-
-.nav-btn:hover {
   background: white;
   color: rgb(1, 78, 86);
 }
@@ -674,11 +671,17 @@ body {
   background: #002529;
 }
 
-.meet-list p {
+.meet-list li small, p {
   text-align: center;
   color: white;
   margin-top: 8px;
   margin-bottom: 28px;
+}
+
+.meet-list li strong {
+  text-align: center;
+  color: #79C8C7;
+  margin-top: 8px;
 }
 
 .meet-list li button {
